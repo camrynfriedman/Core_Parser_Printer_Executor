@@ -1,0 +1,31 @@
+- Tokenizer.java line 389 - is this the constructor?
+- how do i implement evalCond
+- in execIf(), how do i do this lol
+
+TODO:
+- prog
+    - fix Tokenizer call
+- decl seq
+- stmt seq
+    - parseSS() -> how do I determine which altNo it is
+- decl
+- id list
+- stmt
+    - fix Tokenizer call
+- assign
+- if
+    - execIf()
+- loop
+- in
+- out
+- cond
+    - complete evalCond()
+    - check to see if printCond prints out the beginning and ending brackets or parentheses
+- comp
+    - complete execComp()
+- exp
+- fac
+- op
+- comp op
+- id
+- int    
