@@ -2,7 +2,7 @@
 Written by Camryn Friedman 11/22/22
 
 ## Overview
-The CORE programming language is a made-up language for the purposes of the Principles of Programming Languages class at the Ohio State University (CSE 3341).
+The CORE programming language is a made-up language for the purposes of the Principles of Programming Languages class at the Ohio State University (CSE 3341). The goal of this project was to create an Interpreter for the Core language. 
 
 The grammar for the CORE langauge is as follows:
 (1)     <prog> ::= program <decl seq> begin <stmt seq> end;
@@ -25,7 +25,15 @@ The grammar for the CORE langauge is as follows:
 (18)    <id> ::= ...as defined by RE...
 (19)    <int> ::= ...as defined by RE (only unsigned numbers)
 
-The objective of the project was to use a previously created Tokenizer which reads in 
+The interpreter was created by first using a previously created Tokenizer which reads in a program text file input and tokenizes it according to the mappings found in [TokenMappings.txt](TokenMappings.txt). The project uses those tokens to 
+  
+The interpreter consists of the following components:
+
+Tokenizer: Inputs Core program, produces stream of tokens.
+Parser: Consumes stream of tokens, produces the abstract parse tree (PT).
+Printer: Given PT, prints the original prog. in a pretty format. Used optionally, by user’s choice.
+Executor: Given PT (and input data), executes the program.
+Full Interpreter: Tokenizer -> Parser -> Printer -> Executor
 
 ## User Manual
 To compile the project:
